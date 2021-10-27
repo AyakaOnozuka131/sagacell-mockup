@@ -1,0 +1,81 @@
+/* ------------------------------
+- reset
+------------------------------ */
+html {
+    background: $baseColor;
+    font-family: Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;;
+    font-weight: normal;
+    font-size: 62.5%;
+    color: $baseFontColor;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: $baseColor;
+}
+
+main {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $baseFontColor;
+    cursor: pointer;
+    @include mq-up() {
+        transition: all .3s;
+    }
+}
+
+img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+a span {
+    line-height: 1.7;
+}
+
+
+a span {
+    display: inline-block;
+}
+
+p,
+p a,
+p span {
+    line-height: 1.5;
+}
+
+sup {
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+button {
+    @include mq-up() {
+        transition: all .3s;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}

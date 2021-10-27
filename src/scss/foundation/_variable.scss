@@ -1,0 +1,64 @@
+// --- Colors ---
+$baseColor: #FDFDFD;
+$keyColor: #107C41;
+
+// --- Font Colors ---
+$baseFontColor: #333;
+// --- bg ---
+$bgAccentColorAttention: #E06A3B;
+$bgFooterColor: #587170;
+$bgTagColor: #F1F2F5;
+$bgSubColor: #F3FBFB;
+$bgChatColorRecieved: #fbf0e6;
+$bgChatColorSend: #F2F3F7;
+$bgErrorColor: #f8d7da;
+$bgSuccessColor: #d1e7dd;
+$bgRequiredColor: #F15252;
+$bgOptionalColor: #bcbcbc;
+$bgCommentColor: #EBEEEE;
+
+// button
+
+
+// border
+
+// shadow
+$shadowColor: rgba(0, 0, 0, 0.16);
+$focusShadowColor: rgba(52, 144, 220, 0.25) 0px 0px 0px 0.2rem;
+
+// --- nonColoredColorGray ---
+$nonColoredColorGray-50: #f9f9f9;
+$nonColoredColorGray-100: #F4F4F4;
+$nonColoredColorGray-200: #ebebeb;
+$nonColoredColorGray-250: #d3d3d3;
+$nonColoredColorGray-500: #707070;
+$nonColoredColorGray-1000: #000000;
+
+// font
+$Montserrat: 'Montserrat', sans-serif;;
+
+
+
+// --- Break Point ---
+$breakpoint-up: (
+  'xs': 'screen and (min-width: 599px)',
+  'sm': 'screen and (min-width: 769px)',
+  'md': 'screen and (min-width: 1025px)',
+  'lg': 'screen and (min-width: 1100px)',
+  'xl': 'screen and (min-width: 1400px)',
+) !default;
+
+$breakpoint-down: (
+  'xs': 'screen and (max-width: 600px)',
+  'sm': 'screen and (max-width: 768px)',
+  'md': 'screen and (max-width: 1024px)',
+  'lg': 'screen and (max-width: 1099px)',
+  'xl': 'screen and (max-width: 1399px)',
+) !default;
+
+$breakpoint-between: (
+  'sm-md': 'screen and (min-width: 769px) and (max-width: 1024px)',
+  'sm-xl': 'screen and (min-width: 769px) and (max-width: 1099px)',
+  'md-lg': 'screen and (min-width: 960px) and (max-width: 1024px)',
+  'md-xl': 'screen and (min-width: 960px) and (max-width: 1399px)',
+) !default;

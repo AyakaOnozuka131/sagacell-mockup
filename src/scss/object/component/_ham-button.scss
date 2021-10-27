@@ -1,0 +1,17 @@
+@include mq-up() {
+    .c-ham-button {
+        display: none;
+    }
+}
+
+@include mq-down() {
+    .c-hamButton {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: fixed;
+    }
+}

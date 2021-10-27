@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="84.1" viewBox="0 0 800 84.1">
+  <g id="グループ_74" data-name="グループ 74" transform="translate(-10 192.1)">
+    <rect id="長方形_43" data-name="長方形 43" width="51.4" height="23" transform="translate(10 -192.1)" fill="#185b37"/>
+    <rect id="長方形_44" data-name="長方形 44" width="51.4" height="23" transform="translate(68.3 -192.1)" fill="#107c41"/>
+    <rect id="長方形_45" data-name="長方形 45" width="51.4" height="23" transform="translate(68.3 -161.9)" fill="#107c41"/>
+    <rect id="長方形_46" data-name="長方形 46" width="51.4" height="23" transform="translate(126.7 -192.1)" fill="#21a365"/>
+    <rect id="長方形_47" data-name="長方形 47" width="51.4" height="23" transform="translate(126.7 -161.9)" fill="#21a365"/>
+    <rect id="長方形_48" data-name="長方形 48" width="51.4" height="23" transform="translate(126.7 -131.7)" fill="#21a365"/>
+    <g id="グループ_66" data-name="グループ 66">
+      <rect id="長方形_49" data-name="長方形 49" width="24.2" height="13.9" transform="translate(312.9 -151.9)"/>
+      <path id="パス_36" data-name="パス 36" d="M345.3-192.1H304.7l-12.1,11.9V-108h14.6v-70.2h35.6V-108h14.6v-72.2Z"/>
+    </g>
+    <g id="グループ_67" data-name="グループ 67">
+      <rect id="長方形_50" data-name="長方形 50" width="33.3" height="13.9" transform="translate(635.7 -157.9)"/>
+      <path id="パス_37" data-name="パス 37" d="M674.4-192.1h-59V-108h59v-13.9H630v-56.3h44.4Z"/>
+    </g>
+    <g id="グループ_68" data-name="グループ 68">
+      <path id="パス_38" data-name="パス 38" d="M719.8-121.9H691.2V-108h52.5v-13.9Z"/>
+      <rect id="長方形_51" data-name="長方形 51" width="14.6" height="64.4" transform="translate(691.2 -192.1)"/>
+    </g>
+    <g id="グループ_69" data-name="グループ 69">
+      <path id="パス_39" data-name="パス 39" d="M275.8-127.6v-18l-12-12.5H226.3v-14.4H211.7v17.1l11.4,11.1h38.2v16.7Z"/>
+      <path id="パス_40" data-name="パス 40" d="M261.3-121.9H211.7V-108h52.1l12-12.6v-1.3Z"/>
+      <path id="パス_41" data-name="パス 41" d="M226.3-178.2h49.5v-13.9h-52l-12.1,11.9v2Z"/>
+    </g>
+    <g id="グループ_70" data-name="グループ 70">
+      <path id="パス_42" data-name="パス 42" d="M438.8-127.6V-157H402.5v13.9h21.7v15.5Z"/>
+      <path id="パス_43" data-name="パス 43" d="M388.8-178.2h50v-13.9H387.2l-13,11.8v2.1Z"/>
+      <path id="パス_44" data-name="パス 44" d="M424.2-121.9H388.8v-50.6H374.2v52.7L386.5-108h40.4l11.9-11.9v-2Z"/>
+    </g>
+    <g id="グループ_71" data-name="グループ 71">
+      <rect id="長方形_52" data-name="長方形 52" width="24.2" height="13.9" transform="translate(475.9 -151.9)"/>
+      <path id="パス_45" data-name="パス 45" d="M508.3-192.1H467.7l-12.1,11.9V-108h14.5v-70.2h35.7V-108h14.6v-72.2Z"/>
+    </g>
+    <g id="グループ_72" data-name="グループ 72">
+      <rect id="長方形_53" data-name="長方形 53" width="14.5" height="44.8" transform="translate(537.2 -172.5)"/>
+      <path id="パス_46" data-name="パス 46" d="M549.5-192.1l-12.3,11.9v2h61.4v-13.9Z"/>
+      <path id="パス_47" data-name="パス 47" d="M551.7-121.9H537.2v2.1L549.5-108h49.1v-13.9H551.7Z"/>
+    </g>
+    <g id="グループ_73" data-name="グループ 73">
+      <path id="パス_48" data-name="パス 48" d="M786.1-121.9H757.5V-108H810v-13.9Z"/>
+      <rect id="長方形_54" data-name="長方形 54" width="14.6" height="64.4" transform="translate(757.5 -192.1)"/>
+    </g>
+  </g>
+</svg>

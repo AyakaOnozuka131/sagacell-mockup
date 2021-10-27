@@ -1,0 +1,25 @@
+.l-header{
+    box-shadow: 0 3px 6px $shadowColor;
+    @include mq-up(){
+        padding: 0 40px;
+    }
+    @include mq-down(){
+        padding: 0 15px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.l-header__content{
+    @include mq-up(){
+        display: grid;
+        grid-template-columns: 238px auto;
+        align-content: center;
+        justify-content: space-between;
+    }
+    @include mq-down(){
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}

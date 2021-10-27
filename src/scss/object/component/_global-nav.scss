@@ -1,0 +1,39 @@
+.c-global-nav{
+    @include mq-down(){
+        background: $baseColor;
+        opacity: 0;
+        z-index: -1;
+        transition: ease-in-out 0.3s;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}
+
+.c-global-nav__list{
+    @include mq-up(){
+        display: flex;
+    }
+}
+
+.c-global-nav__link{
+    font-size: 1.6rem;
+    font-weight: bold;
+    @include mq-up(){
+        padding: 26.5px 20px;
+    }
+    @media (hover: hover) {
+        &:hover {
+            color: $keyColor;
+        }
+    }
+}
+
+.is-drawer-active{
+    .c-global-nav{
+        opacity: 1;
+        z-index: 1000;
+    }
+}
