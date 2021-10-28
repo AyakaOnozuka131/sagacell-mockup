@@ -9,6 +9,7 @@
         left: 0;
         right: 0;
         width: 100%;
+        visibility: hidden;
     }
 }
 
@@ -38,5 +39,6 @@
 .is-drawer-active{
     .c-global-nav{
         opacity: 1;
+        visibility: visible;
     }
 }

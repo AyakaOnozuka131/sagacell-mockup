@@ -4,24 +4,42 @@
 
 .p-tab__list{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include mq-up(){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include mq-down(){
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
 }
 
 .p-tab__item{
-    &:not(:last-child){
-        border-right: 1px solid $nonColoredColorGray-200;
+    @include mq-up(){
+        &:not(:last-child){
+            border-right: 1px solid $nonColoredColorGray-200;
+        }
+    }
+    @include mq-down(){
+        &:nth-child(even){
+            border-left: 1px solid $nonColoredColorGray-200;
+        }
     }
 }
 
 .p-tab__button{
     background-color: $nonColoredColorGray-100;
     border-bottom: 3px solid $nonColoredColorGray-200;
-    font-size: 1.6rem;
     font-weight: bold;
     display: block;
-    padding: 5px;
+    padding: 5px 0;
     text-align: center;
     width: 100%;
+    @include mq-up(){
+        font-size: 1.6rem;
+    }
+    @include mq-down(){
+        font-size: 1.3rem;
+    }
     &.is-current{
         background-color: rgba($tabButtonCurrentColor, 0.1);
         border-bottom: 3px solid $keyColor;

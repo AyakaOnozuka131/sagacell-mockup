@@ -773,6 +773,7 @@ table {
     left: 0;
     right: 0;
     width: 100%;
+    visibility: hidden;
   }
 }
 
@@ -810,6 +811,7 @@ table {
 
 .is-drawer-active .c-global-nav {
   opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (min-width: 769px) {
@@ -1102,22 +1104,53 @@ table {
 
 .p-tab__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
-.p-tab__item:not(:last-child) {
-  border-right: 1px solid #CCCCCC;
+@media screen and (min-width: 769px) {
+  .p-tab__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-tab__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .p-tab__item:not(:last-child) {
+    border-right: 1px solid #CCCCCC;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-tab__item:nth-child(even) {
+    border-left: 1px solid #CCCCCC;
+  }
 }
 
 .p-tab__button {
   background-color: #F5F5F5;
   border-bottom: 3px solid #CCCCCC;
-  font-size: 1.6rem;
   font-weight: bold;
   display: block;
-  padding: 5px;
+  padding: 5px 0;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .p-tab__button {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-tab__button {
+    font-size: 1.3rem;
+  }
 }
 
 .p-tab__button.is-current {
@@ -1183,6 +1216,7 @@ table {
 
 .p-title__lead {
   font-size: 1.6rem;
+  line-height: 1.7;
 }
 
 /* utility
