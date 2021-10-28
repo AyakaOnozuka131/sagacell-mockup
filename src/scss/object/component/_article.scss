@@ -1,0 +1,45 @@
+.c-article__link{
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px $shadowColor;
+    display: block;
+    position: relative;
+    width: 100%;
+    @media (hover: hover) {
+        &:hover {
+            box-shadow: 0 3px 18px 3px $hoverShadowColor;
+            transform: translateY(-3px);
+        }
+    }
+    &:focus{
+        box-shadow: 0 3px 18px 3px $hoverShadowColor;
+        transform: translateY(-3px);
+    }
+}
+
+.c-article__content{
+    @include mq-up(){
+        padding: 15px;
+    }
+    @include mq-down(){
+        padding: 10px;
+    }
+}
+
+.c-article__title{
+    @include mq-up(){
+        font-size: 1.8rem;
+    }
+    @include mq-down(){
+        font-size: 1.6rem;
+    }
+}
+
+.c-article__lead{
+    @include mq-up(){
+        font-size: 1.6rem;
+    }
+    @include mq-down(){
+        font-size: 1.4rem;
+    }
+}

@@ -1,3 +1,4 @@
+<div class="c-overlay"></div>
 <header class="c-header">
     <div class="l-header">
         <button type="button" id="js-buttonHamburger" aria-controls="global-nav" aria-expanded="false" class="c-ham-button c-hamburger">
@@ -29,3 +30,4 @@
         </div>
     </div>
 </header>
+

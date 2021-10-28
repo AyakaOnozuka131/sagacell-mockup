@@ -1,0 +1,37 @@
+.p-tab{
+    margin-bottom: 40px;
+}
+
+.p-tab__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.p-tab__item{
+    &:not(:last-child){
+        border-right: 1px solid $nonColoredColorGray-200;
+    }
+}
+
+.p-tab__button{
+    background-color: $nonColoredColorGray-100;
+    border-bottom: 3px solid $nonColoredColorGray-200;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    &.is-current{
+        background-color: rgba($tabButtonCurrentColor, 0.1);
+        border-bottom: 3px solid $keyColor;
+    }
+    @media (hover: hover) {
+        &:hover {
+            background-color: rgba($tabButtonCurrentColor, 0.1);
+        }
+    }
+    &:focus{
+        background-color: rgba($tabButtonCurrentColor, 0.1);
+    }
+}

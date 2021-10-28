@@ -1,0 +1,15 @@
+.l-article{
+    display: grid;
+    @include mq-up(){
+        grid-template-columns: repeat(3, 30%);
+        row-gap: 30px;
+        column-gap: 5%;
+        margin-bottom: 50px;
+    }
+    @include mq-down(){
+        grid-template-columns: repeat(2, 48%);
+        row-gap: 20px;
+        column-gap: 4%;
+        margin-bottom: 40px;
+    }
+}

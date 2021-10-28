@@ -13,6 +13,9 @@
             <li class="c-footer-nav__item">
                 <a href="./terms-and-privacy.html" class="c-footer-nav__link">利用規約</a>
             </li>
+            <li class="c-footer-nav__item">
+                <a href="" class="c-footer-nav__link">お問い合わせ</a>
+            </li>
         </ul>
     </div>
     <div class="p-footer__logo">

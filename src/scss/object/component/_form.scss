@@ -1,0 +1,14 @@
+.c-form-search{
+    background: $baseColor url(../images/icon/icon_search.svg) center right 10px /32px no-repeat;
+    box-shadow: 0 3px 6px $shadowColor;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px 50px 10px 10px;
+    font-size: 1.6rem;
+    height: 56px;
+    &:focus{
+        outline: none;
+        box-shadow: $focusShadowColor;
+    }
+}

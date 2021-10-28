@@ -1,0 +1,32 @@
+.p-title{
+    @include mq-up(){
+        margin-bottom: 40px;
+    }
+    @include mq-down(){
+        margin-bottom: 20px;
+    }
+}
+
+.p-title__text{
+    display: flex;
+    align-items: center;
+    @include mq-up(){
+        font-size: 3.2rem;
+        margin-bottom: 10px;
+    }
+    @include mq-down(){
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+}
+
+.p-title__icon{
+    width: 40px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.p-title__lead{
+    font-size: 1.6rem;
+}

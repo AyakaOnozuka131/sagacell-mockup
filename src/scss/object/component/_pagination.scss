@@ -1,0 +1,38 @@
+.c-pagination__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-pagination__item{
+    margin: 0 2px;
+    @include mq-up(){
+        font-size: 1.8rem;
+    }
+    @include mq-down(){
+        font-size: 1.4rem;
+    }
+}
+
+.c-pagination__link{
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    &.is-current{
+        background-color: $keyColor;
+        color: $baseColor;
+    }
+    @media (hover: hover) {
+        &:hover {
+            background-color: rgba($keyColor, 0.2);
+        }
+    }
+    &:focus{
+        color: $baseColor;
+        background-color: rgba($keyColor, 0.2);
+    }
+}

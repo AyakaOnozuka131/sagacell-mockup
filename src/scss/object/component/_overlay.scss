@@ -1,0 +1,19 @@
+.c-overlay{
+    background: rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.is-drawer-active{
+    .c-overlay{
+        opacity: 1;
+        z-index: 999;
+    }
+}

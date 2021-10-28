@@ -29,11 +29,14 @@
             color: $keyColor;
         }
     }
+    @include mq-down(){
+        display: block;
+        padding: 15px;
+    }
 }
 
 .is-drawer-active{
     .c-global-nav{
         opacity: 1;
-        z-index: 1000;
     }
 }

@@ -1,0 +1,13 @@
+.p-search{
+    @include mq-up(){
+        margin-bottom: 40px;
+    }
+    @include mq-down(){
+        margin-bottom: 20px;
+    }
+    .c-form-search{
+        @include mq-up(){
+            max-width: 50%;
+        }
+    }
+}
