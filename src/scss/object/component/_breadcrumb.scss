@@ -1,0 +1,31 @@
+.c-breadcrumb{
+    font-size: 1.4rem;
+    @include mq-up(){
+        margin: 20px 0 40px;
+    }
+    @include mq-down(){
+        margin: 10px 0 30px;
+    }
+}
+
+.c-breadcrumb__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-breadcrumb__item{
+    display: inline;
+    &+.c-breadcrumb__item{
+        &::before{
+            content: '';
+            border: 0;
+            border-top: solid 1px $baseFontColor;
+            border-right: solid 1px $baseFontColor;
+            display: inline-block;
+            transform: rotate(45deg);
+            width: 8px;
+            height: 8px;
+            margin: 0 5px;
+        }
+    }
+}

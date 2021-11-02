@@ -1,0 +1,15 @@
+.p-component{
+    &:not(:last-child){
+        @include mq-up(){
+            margin-bottom: 40px;
+        }
+        @include mq-down(){
+            margin-bottom: 30px;
+        }
+    }
+    .c-product{
+        &+.c-product{
+            margin-top: 20px;
+        }
+    }
+}

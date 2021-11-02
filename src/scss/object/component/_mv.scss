@@ -1,0 +1,21 @@
+.c-mv{
+    background-color: $mvColor;
+}
+
+.c-mv__title{
+    color: $baseColor;
+    @include mq-up(){
+        font-size: 3.2rem;
+        padding: 39.5px 0;
+    }
+    @include mq-down(){
+        font-size: 2.4rem;
+        padding: 25px 0;
+    }
+}
+
+.c-mv__title__sub{
+    font-weight: bold;
+    font-size: 0.5em;
+    display: block;
+}

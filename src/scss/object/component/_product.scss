@@ -1,0 +1,118 @@
+.c-product{
+    background-color: $nonColoredColorGray-100;
+    padding: 25px 0;
+}
+
+.c-product__img{
+    @include mq-down(){
+        margin-bottom: 20px;
+        padding: 0 40px;
+        img{
+            max-width: auto;
+            width: 100%;
+        }
+    }
+}
+
+.c-product__title{
+    line-height: 1.5;
+    font-weight: bold;
+    @include mq-up(){
+        font-size: 2.2rem;
+        margin-bottom: 5px;
+    }
+    @include mq-down(){
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+}
+
+.c-product__links{
+    margin-bottom: 20px;
+    @include mq-up(){
+        display: grid;
+        align-content: center;
+    }
+    @include mq-up(md){
+        grid-template-columns: 190px 180px 180px;
+        column-gap: 15px;
+    }
+    @include mq-between(){
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 190px);
+        gap: 10px;
+    }
+}
+
+.c-product__button{
+    border-radius: 2px;
+    box-shadow: 0 2px 4px $shadowColor;
+    color: $baseColor;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    padding: 6px;
+    @media (hover: hover) {
+        &:hover {
+            box-shadow: 0 2px 6px 2px $hoverShadowColor;
+        }
+    }
+    &:focus{
+        box-shadow: 0 2px 6px 2px $hoverShadowColor;
+    }
+    @include mq-down(){
+        &+.c-product__button{
+            margin-top: 15px;
+        }
+    }
+}
+
+.c-product__button--kindle{
+    background-color: $productButtonColor-kindle;
+}
+
+.c-product__button--amazon{
+    background-color: $productButtonColor-amazon;
+}
+
+.c-product__button--rakuten{
+    background-color: $productButtonColor-rakuten;
+}
+
+.c-product__button__price{
+    font-size: 0.85em;
+    font-weight: normal;
+    display: block;
+}
+
+.c-product__point{
+    position: relative;
+    margin: 50px 0 0 0;
+}
+
+.c-product__point__heading{
+    padding: 10px;
+    background-color: $pointColor;
+    position: absolute;
+    top: -33px;
+}
+
+.c-product__point__heading__text{
+    background: url(../images/icon/icon_light-bulb.svg) center left/20px no-repeat;
+    border-radius: 4px 4px 0 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 26px;
+    color: $baseColor;
+    line-height: 1.2;
+}
+
+.c-product__point__text{
+    background-color: $baseColor;
+    border: 4px solid $pointColor;
+    padding: 14px;
+    line-height: 1.7;
+    font-size: 1.4rem;
+}

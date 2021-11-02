@@ -1,0 +1,8 @@
+.l-page{
+    @include mq-up(){
+        margin-bottom: 80px;
+    }
+    @include mq-down(){
+        margin-bottom: 60px;
+    }
+}

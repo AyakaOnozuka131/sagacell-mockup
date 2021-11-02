@@ -1,0 +1,13 @@
+.c-heading-primary{
+    border-bottom: 3px solid $keyColor;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    @include mq-up(){
+        font-size: 2.8rem;
+        padding: 12px 10px;
+    }
+    @include mq-down(){
+        font-size: 2.4rem;
+        padding: 8px 10px;
+    }
+}

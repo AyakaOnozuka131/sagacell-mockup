@@ -1,0 +1,16 @@
+.l-product{
+    @include mq-up(){
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 180px auto;
+        column-gap: 30px;
+        max-width: 857px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include mq-down(){
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+}
