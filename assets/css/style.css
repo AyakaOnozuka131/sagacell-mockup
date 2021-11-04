@@ -1237,12 +1237,30 @@ table {
   background-color: #3AA364;
 }
 
+@media (hover: hover) {
+  .c-product__button--kindle:hover {
+    background-color: #3ba666;
+  }
+}
+
 .c-product__button--amazon {
   background-color: #F59B0B;
 }
 
+@media (hover: hover) {
+  .c-product__button--amazon:hover {
+    background-color: #f59d0f;
+  }
+}
+
 .c-product__button--rakuten {
   background-color: #EF4444;
+}
+
+@media (hover: hover) {
+  .c-product__button--rakuten:hover {
+    background-color: #ef4848;
+  }
 }
 
 .c-product__button__price {
@@ -1257,10 +1275,10 @@ table {
 }
 
 .c-product__point__heading {
-  padding: 10px;
+  padding: 7px 10px;
   background-color: #FFBE0B;
   position: absolute;
-  top: -33px;
+  top: -28px;
 }
 
 .c-product__point__heading__text {

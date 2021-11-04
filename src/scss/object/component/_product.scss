@@ -71,14 +71,29 @@
 
 .c-product__button--kindle{
     background-color: $productButtonColor-kindle;
+    @media (hover: hover) {
+        &:hover {
+            background-color: lighten($productButtonColor-kindle, 0.9);
+        }
+    }
 }
 
 .c-product__button--amazon{
     background-color: $productButtonColor-amazon;
+    @media (hover: hover) {
+        &:hover {
+            background-color: lighten($productButtonColor-amazon, 0.9);
+        }
+    }
 }
 
 .c-product__button--rakuten{
     background-color: $productButtonColor-rakuten;
+    @media (hover: hover) {
+        &:hover {
+            background-color: lighten($productButtonColor-rakuten, 0.9);
+        }
+    }
 }
 
 .c-product__button__price{
@@ -93,10 +108,10 @@
 }
 
 .c-product__point__heading{
-    padding: 10px;
+    padding: 7px 10px;
     background-color: $pointColor;
     position: absolute;
-    top: -33px;
+    top: -28px;
 }
 
 .c-product__point__heading__text{
