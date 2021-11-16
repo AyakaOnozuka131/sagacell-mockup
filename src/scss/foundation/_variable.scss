@@ -15,9 +15,22 @@ $tabButtonCurrentColor: #4FBE81;
 $productButtonColor-kindle: #3AA364;
 $productButtonColor-amazon: #F59B0B;
 $productButtonColor-rakuten: #EF4444;
+$snsButtonColor-tw: #74C1F8;
+$snsButtonColor-fb: #668AD8;
+$snsButtonColor-pocket: #F87474;
 
 
-// border
+// function
+$functionBorderColor: #F7CF6A;
+$functionBackgroundColor: #FFF9DF;
+
+// toolchip
+$tooltipBackgroundColor: #333333;
+
+// flow
+$flowHeadingColor: #43A269;
+$flowBackgroudColor: #4FBE81;
+$flowNumberColor: #F59E0B;
 
 // shadow
 $shadowColor: rgba(0, 0, 0, 0.16);
@@ -27,6 +40,7 @@ $focusShadowColor: rgba(52, 144, 220, 0.25) 0px 0px 0px 0.2rem;
 // --- nonColoredColorGray ---
 $nonColoredColorGray-50: #f9f9f9;
 $nonColoredColorGray-100: #F5F5F5;
+$nonColoredColorGray-150: #EEEEEE;
 $nonColoredColorGray-200: #CCCCCC;
 
 

@@ -1,0 +1,65 @@
+.c-page-mv{
+    background-color: $mvColor;
+    display: flex;
+    align-items: center;
+    @include mq-up(){
+        height: 180px;
+    }
+}
+
+.c-page-mv__content{
+    @include mq-down(){
+        padding: 36px 0;
+    }
+}
+
+.c-page-mv__date,
+.c-page-mv__title,
+.c-page-mv__tag{
+    color: $baseColor;
+}
+
+.c-page-mv__date{
+    line-height: 1.2;
+    @include mq-up(){
+        font-size: 1.6rem;
+    }
+    @include mq-down(){
+        font-size: 1.4rem;
+    }
+}
+
+.c-page-mv__title{
+    line-height: 1.6;
+    margin-bottom: 3px;
+    @include mq-up(){
+        font-size: 3.2rem;
+    }
+    @include mq-down(){
+        font-size: 2.8rem;
+    }
+}
+
+.c-page-mv__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-page-mv__item{
+    &+.c-page-mv__item{
+        margin-left: 8px;
+    }
+}
+
+.c-page-mv__tag{
+    border: 1px solid $baseColor;
+    border-radius: 30px;
+    line-height: 1.2;
+    padding: 5px 10px;
+    @include mq-up(){
+        font-size: 1.4rem;
+    }
+    @include mq-down(){
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,79 @@
+.p-flow{
+    &+.p-flow{
+        margin-top: 40px;
+    }
+    @include mq-up(){
+        display: grid;
+        grid-template-columns: 350px auto;
+        column-gap: 30px;
+    }
+}
+
+.p-flow__img{
+    @include mq-down(){
+        margin-bottom: 20px;
+    }
+}
+
+.p-flow__heading{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.p-flow__point{
+    position: relative;
+    margin-top: 15px;
+}
+
+.p-flow__point__heading{
+    background-color: $flowHeadingColor;
+    border-radius: 2px;
+    color: $baseColor;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.p-flow__point__heading__text{
+    background: url(../images/icon/icon_light-bulb.svg) center left/15px no-repeat;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.2;
+    padding-left: 20px;
+}
+
+.p-flow__point__list{
+    background-color: rgba($flowBackgroudColor, 0.1);
+    border-radius: 4px;
+    counter-reset: number;
+    padding: 25px 20px 20px 20px;
+    top: -12px;
+    left: 20px;
+}
+
+.p-flow__point__item{
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: relative;
+    padding-left: 25px;
+    &::before{
+        content: counter(number);
+        counter-increment: number;
+        background: $flowNumberColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: $baseColor;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+    }
+    &+.p-flow__point__item{
+        margin-top: 5px;
+    }
+}

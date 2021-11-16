@@ -11,3 +11,27 @@
         padding: 8px 10px;
     }
 }
+
+.c-heading-secondary{
+    position: relative;
+    background-color: $nonColoredColorGray-150;
+    margin-bottom: 20px;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        top: 50%;
+        left: 0;
+        background: $keyColor;
+    }
+    @include mq-up(){
+        font-size: 1.8rem;
+        padding: 12px 30px;
+    }
+    @include mq-down(){
+        font-size: 1.6rem;
+        padding: 8px 30px;
+    }
+}

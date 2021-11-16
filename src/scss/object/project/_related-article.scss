@@ -1,0 +1,13 @@
+.p-related-article{
+    @include mq-up(){
+        margin-bottom: 80px;
+    }
+    @include mq-down(){
+        margin-bottom: 60px;
+    }
+    .c-product{
+        &+.c-product{
+            margin-top: 20px;
+        }
+    }
+}
