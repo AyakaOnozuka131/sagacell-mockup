@@ -1,5 +1,5 @@
 <div class="c-overlay"></div>
-<header class="c-header">
+<header class="c-header js-header">
     <div class="l-header">
         <button type="button" id="js-buttonHamburger" aria-controls="global-nav" aria-expanded="false" class="c-ham-button c-hamburger">
             <span class="c-hamburger__line">

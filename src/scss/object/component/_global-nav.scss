@@ -1,21 +1,40 @@
 .c-global-nav{
     @include mq-down(){
         background: $baseColor;
-        opacity: 0;
-        z-index: -1;
         transition: ease-in-out 0.3s;
         position: fixed;
         top: 80px;
         left: 0;
         right: 0;
         width: 100%;
-        visibility: hidden;
+        &[aria-hidden="true"]{
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+        }
+        &[aria-hidden="false"]{
+            z-index: 100;
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
 
 .c-global-nav__list{
     @include mq-up(){
         display: flex;
+    }
+    @include mq-down(){
+        padding: 40px 15px;
+    }
+}
+
+.c-global-nav__item{
+    @include mq-down(){
+        border-bottom: 1px solid $nonColoredColorGray-200;
+        &:first-child{
+            border-top: 1px solid $nonColoredColorGray-200;
+        }
     }
 }
 
@@ -33,12 +52,5 @@
     @include mq-down(){
         display: block;
         padding: 15px;
-    }
-}
-
-.is-drawer-active{
-    .c-global-nav{
-        opacity: 1;
-        visibility: visible;
     }
 }

@@ -24,7 +24,7 @@
 .p-footer__logo__img{
     width: 174px;
     @include mq-up(){
-        margin-right: 10px;
+        margin-right: 18px;
     }
     @include mq-down(){
         margin: 0 auto 10px;

@@ -1,10 +1,13 @@
 .p-component{
     &:not(:last-child){
-        @include mq-up(){
-            margin-bottom: 40px;
+        @include mq-up(md){
+            margin-bottom: 60px;
+        }
+        @include mq-between(){
+            margin-bottom: 50px;
         }
         @include mq-down(){
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
     }
     .c-product{

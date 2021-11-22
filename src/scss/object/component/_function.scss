@@ -3,9 +3,12 @@
     border: 3px solid $functionBorderColor;
     padding: 15px 60px 15px 20px;
     position: relative;
-    width: 100%;
     @include mq-up(){
         min-width: 400px;
+        max-width: 50%;
+    }
+    @include mq-down(){
+        width: 100%;
     }
 }
 
@@ -13,7 +16,7 @@
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.7;
-    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .c-function__copy-button{

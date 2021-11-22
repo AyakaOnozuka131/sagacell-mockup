@@ -1,9 +1,9 @@
 .l-article{
     display: grid;
     @include mq-up(){
-        grid-template-columns: repeat(3, 30%);
-        row-gap: 30px;
-        column-gap: 5%;
+        grid-template-columns: repeat(3, 31%);
+        row-gap: 33px;
+        column-gap: 3.4%;
         margin-bottom: 50px;
     }
     @include mq-down(){

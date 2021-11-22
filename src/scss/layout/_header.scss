@@ -11,9 +11,15 @@
 }
 
 .l-header__content{
-    @include mq-up(){
+    @include mq-up(md){
         display: grid;
-        grid-template-columns: 238px auto;
+        grid-template-columns: 400px auto;
+        align-content: center;
+        justify-content: space-between;
+    }
+    @include mq-between(){
+        display: grid;
+        grid-template-columns: 220px auto;
         align-content: center;
         justify-content: space-between;
     }

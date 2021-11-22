@@ -16,14 +16,14 @@
 }
 
 .p-flow__heading{
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 3px;
 }
 
 .p-flow__point{
     position: relative;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .p-flow__point__heading{
@@ -50,7 +50,7 @@
     background-color: rgba($flowBackgroudColor, 0.1);
     border-radius: 4px;
     counter-reset: number;
-    padding: 25px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     top: -12px;
     left: 20px;
 }

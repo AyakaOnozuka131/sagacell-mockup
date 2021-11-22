@@ -5,11 +5,49 @@
     left: 0;
     right: 0;
     height: 80px;
+    transition: .5s;
     z-index: 1000;
+    &.is-hide{
+        transform: translateY(-100%);
+    }
 }
 
 .c-header-logo{
-    display: flex;
-    align-items: center;
-    max-width: 238px;
+    @include mq-up(md){
+        display: flex;
+        align-items: center;
+    }
+    @include mq-down(md){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.c-header-logo__link{
+    display: block;
+    @include mq-up(md){
+        width: 180px;
+        margin-right: 18px;
+    }
+    @include mq-between(){
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    @include mq-down(){
+        width: 180px;
+        margin-bottom: 10px;
+    }
+}
+
+.c-header-logo__tag-line{
+    display: inline-block;
+    line-height: 1.2;
+    white-space: nowrap;
+    @include mq-up(md){
+        font-size: 1.3rem;
+    }
+    @include mq-down(md){
+        font-size: 1rem;
+    }
 }

@@ -34,7 +34,7 @@
 <body>
 
     <div class="c-overlay"></div>
-    <header class="c-header">
+    <header class="c-header js-header">
         <div class="l-header">
             <button type="button" id="js-buttonHamburger" aria-controls="global-nav" aria-expanded="false" class="c-ham-button c-hamburger">
                 <span class="c-hamburger__line">
@@ -48,8 +48,9 @@
                     <a href="" class="c-header-logo__link">
                         <img src="./assets/images/common/logo.svg" alt="ロゴ：match">
                     </a>
+                    <span class="c-header-logo__tag-line">探せる・見つかる・エクセル関数</span>
                 </div>
-                <nav class="c-global-nav js-header__nav">
+                <nav class="c-global-nav js-header__nav" id="global-nav">
                     <ul class="c-global-nav__list">
                         <li class="c-global-nav__item">
                             <a href="./top.html" class="c-global-nav__link">TOP</a>
@@ -101,7 +102,7 @@
                         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
                     </div>
                     <div class="c-function u-margin-20">
-                        <span class="c-function__text">=SUM(A1; A5)</span>
+                        <pre class="c-function__text">=SUM(A1; A5)</pre>
                         <button class="c-function__copy-button" data-tooltip="Copy!">
                             <img src="./assets/images/icon/icon_copy.svg" alt="アイコン：コピー">
                         </button>
@@ -120,7 +121,9 @@
                     <div class="p-flow">
                         <div class="p-flow__img"><img src="https://placehold.jp/350x250.png" alt=""></div>
                         <div class="p-flow__content">
-                            <h3 class="p-flow__heading">手順1</h3>
+                            <h3 class="p-flow__heading">
+                                <span class="p-flow__heading__marker">手順1</span>
+                            </h3>
                             <p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="p-flow__point">
                                 <span class="p-flow__point__heading">
@@ -143,21 +146,21 @@
                     <div class="p-flow">
                         <div class="p-flow__img"><img src="https://placehold.jp/350x250.png" alt=""></div>
                         <div class="p-flow__content">
-                            <h3 class="p-flow__heading">手順2</h3>
+                            <h3 class="p-flow__heading"><span class="p-flow__heading__marker">手順2</span></h3>
                             <p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                         </div>
                     </div>
                     <div class="p-flow">
                         <div class="p-flow__img"><img src="https://placehold.jp/350x250.png" alt=""></div>
                         <div class="p-flow__content">
-                            <h3 class="p-flow__heading">手順3</h3>
+                            <h3 class="p-flow__heading"><span class="p-flow__heading__marker">手順3</span></h3>
                             <p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                         </div>
                     </div>
                     <div class="p-flow">
                         <div class="p-flow__img"><img src="https://placehold.jp/350x250.png" alt=""></div>
                         <div class="p-flow__content">
-                            <h3 class="p-flow__heading">手順4</h3>
+                            <h3 class="p-flow__heading"><span class="p-flow__heading__marker">手順4</span></h3>
                             <p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                         </div>
                     </div>
